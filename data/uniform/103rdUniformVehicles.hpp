@@ -43,3 +43,52 @@ class 103rd_Uniform_ODST_Vehicle: 103rd_Uniform_ODST_Base_Vehicle
 		"MA_Armor\data\Uniforms\Marine\data\Color_Variants\MA_ODST_TrooperShoulders_CO.paa"
 	};
 };
+
+//Dress Vehicle
+    class 103rd_Dress_Uniform_Gigasus_v: 103rd_Dress_Uniform_Base_v
+    {
+        scope = 2;
+        scopeArsenal=2;
+        author = "103rd ODST Aux";
+        displayName = "[103rd] Dress Uniform (Gigasus)";
+        model="\OPTRE_UNSC_Units\Army\officer.p3d";
+        picture="OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
+        hiddenSelections[] = {"camo1","camo2","insignia","clan","ODST"};
+        hiddenSelectionsTextures[] ={"OPTRE_UNSC_Units\Army\data\dress_uniform_odst_co.paa","OD103\data\uniform\textures\Gigasus_Ranks_CO.paa"};
+    };
+
+    class 103rd_Dress_Uniform_Hellhawk_v: 103rd_Dress_Uniform_Base_v
+    {
+        scope = 2;
+        scopeArsenal=2;
+        author = "103rd ODST Aux";
+        displayName = "[103rd] Dress Uniform (Hellhawk)";
+        model="\OPTRE_UNSC_Units\Army\officer.p3d";
+        picture="OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
+        hiddenSelections[] = {"camo1","camo2","insignia","clan","ODST"};
+        hiddenSelectionsTextures[] ={"OPTRE_UNSC_Units\Army\data\dress_uniform_odst_co.paa","OD103\data\uniform\textures\Hellhawk_Ranks_CO.paa"};
+    };
+
+    class 103rd_Dress_Uniform_Bear_v: 103rd_Dress_Uniform_Base_v
+    {
+        scope = 2;
+        scopeArsenal=2;
+        author = "103rd ODST Aux";
+        displayName = "[103rd] Dress Uniform (Bear)";
+        model="\OPTRE_UNSC_Units\Army\officer.p3d";
+        picture="OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
+        hiddenSelections[] = {"camo1","camo2","insignia","clan","ODST"};
+        hiddenSelectionsTextures[] ={"OPTRE_UNSC_Units\Army\data\dress_uniform_white_co.paa","OD103\data\uniform\textures\Bear_Ranks_CO.paa"};
+    };
+
+    class 103rd_Dress_Uniform_v: 103rd_Dress_Uniform_Base_v
+    {
+        scope = 2;
+        scopeArsenal=2;
+        author = "103rd ODST Aux";
+        displayName = "[103rd] Dress Uniform";
+        model="\OPTRE_UNSC_Units\Army\officer.p3d";
+        picture="OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
+        hiddenSelections[] = {"camo1","camo2","insignia","clan","ODST"};
+        hiddenSelectionsTextures[] ={"OPTRE_UNSC_Units\Army\data\dress_uniform_odst_co.paa","OD103\data\uniform\textures\103rd_Ranks_CO.paa"};
+    };

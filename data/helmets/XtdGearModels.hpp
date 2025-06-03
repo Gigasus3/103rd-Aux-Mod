@@ -22,7 +22,7 @@ class XtdGearModels
             class 103rd_Custom_Helmets
             {
                 label="103rd_Custom_Helmets";
-                values[]={"Hellhawk", "Astro", "Astro Recon", "Rex", "Cooky","Gigasus","Thunder"};
+                values[]={"Hellhawk", "Astro", "Astro Recon", "Rex", "Cooky","Gigasus","Thunder", "Raama"};
             };
         };
     };

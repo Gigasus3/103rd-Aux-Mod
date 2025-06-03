@@ -58,7 +58,7 @@ class 103rd_Astro_Recon_Helmet: 103rd_Recon_Helm
 {
     scope=2;
     scopeArsenal=2;
-    displayName="[103rd] Astro Helmet";
+    displayName="[103rd] Astro Recon Helmet";
     model="MA_Armor\data\Helmets\Recon\Recon_Helmet.p3d";
     hiddenSelectionsTextures[]=
     {
@@ -189,6 +189,50 @@ class 103rd_Thunder_Helmet_dp: 103rd_Thunder_Helmet
         hiddenSelectionsTextures[]=
         {
             "OD103\data\helmets\customs\helm_thunder_co.paa",
+            "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"    
+        };
+	};
+};
+class 103rd_Raama_Helmet: 103rd_CH252D_Helmet_Base
+{
+	scope=2;
+	scopeArsenal=2;
+	displayName="[103rd] Raama Helmet";
+	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	hiddenSelectionsTextures[]=
+	{
+		"OD103\data\helmets\customs\helm_Raama_co.paa",
+		"MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Visor_CO.paa"
+	};
+	class XtdGearInfo
+	{
+	model="103rd_Custom_Helmets";
+	103rd_Custom_Helmets="Raama";
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	};
+};
+class 103rd_Raama_Helmet_dp: 103rd_Raama_Helmet
+{
+	scope=1;
+	scopeArsenal=1;
+	displayName="[103rd] Raama Helmet";
+	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+	hiddenSelectionsTextures[]=
+	{
+		"OD103\data\helmets\customs\helm_Raama_co.paa",
+		"MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+        hiddenSelectionsTextures[]=
+        {
+            "OD103\data\helmets\customs\helm_Raama_co.paa",
             "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"    
         };
 	};

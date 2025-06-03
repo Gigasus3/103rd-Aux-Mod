@@ -25,17 +25,6 @@ class XtdGearModels
                 values[]={"Standard", "RTO", "Medic", "Marksman","Engineer"};
             };
         };
-	class 103rd_Base_Vests
-        {
-            label="103rd Base Vests";
-            author="103rd ODST Aux";
-            options[]={"103rd_Base_Vests"};
-            class 103rd_Base_Vests
-            {
-                label="103rd_Base_Vests";
-                values[]={"Standard", "Marksman", "Medic", "Engineer","RTO"};
-            };
-        };
     class 103rd_Standard_Uniforms
         {
             label="103rd Standard Uniforms";
@@ -47,15 +36,15 @@ class XtdGearModels
                 values[]={"ODST"};
             };
         };
-        class 103rd_Dress_Custom_Uniforms
+        class 103rd_Dress_Uniforms
         {
-            label="103rd Dress Custom Uniforms";
+            label="103rd Dress Uniforms";
             author="103rd ODST Aux";
-            options[]={"103rd_Dress_Custom_Uniforms"};
-            class 103rd_Dress_Custom_Uniforms
+            options[]={"103rd_Dress_Uniforms"};
+            class 103rd_Dress_Uniforms
             {
-                label="103rd_Dress_Custom_Uniforms";
-                values[]={"Gigasus"};
+                label="103rd_Dress_Uniforms";
+                values[]={"ODST","Gigasus", "Hellhawk", "Bear"};
             };
         };
     };
@@ -69,7 +58,7 @@ class XtdGearModels
             class 103rd_Standard_Backpacks
             {
                 label="103rd_Standard_Backpacks";
-                values[]={"Standard", "Engineer", "Medic", "RTO", "Invisible", "Marksman"};
+                values[]={"Standard", "Engineer", "Engineer LR", "Medic", "Medic LR", "RTO", "Invisible", "Invis RTO", "Marksman", "Marksman LR"};
             };
         };
     };

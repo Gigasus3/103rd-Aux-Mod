@@ -69,72 +69,6 @@ class CfgWeapons
     class VestItem;
 	class MA_M7_SMG;
     class OPTRE_UNSC_Dress_Uniform_odst;
-    class OPTRE_UNSC_Dress_Uniform_white;
-
-// Dress Uniform
-    class 103_Dress_Uniform_Gigasus: OPTRE_UNSC_Dress_Uniform_odst
-    {
-        displayName="[103rd] Dress Uniform (Gigasus)";
-        author="103rd ODST AUX";
-        scope=2;
-        class ItemInfo: UniformItem
-        {
-		uniformModel="-";
-        uniformClass="103_Dress_Uniform_Gigasus_v";
-		containerClass="Supply200";
-		mass=10;
-		uniformType="Neopren";
-		modelSides[]={6};
-        };
-    };
-
-    class 103_Dress_Uniform_Hellhawk: OPTRE_UNSC_Dress_Uniform_odst
-    {
-        displayName="[103rd] Dress Uniform (Hellhawk)";
-        author="103rd ODST AUX";
-        scope=2;
-        class ItemInfo: UniformItem
-        {
-		uniformModel="-";
-        uniformClass="103_Dress_Uniform_Hellhawk_v";
-		containerClass="Supply200";
-		mass=10;
-		uniformType="Neopren";
-		modelSides[]={6};
-        };
-    };
-
-    class 103_Dress_Uniform_Bear: OPTRE_UNSC_Dress_Uniform_white
-    {
-        displayName="[103rd] Dress Uniform (Bear)";
-        author="103rd ODST AUX";
-        scope=2;
-        class ItemInfo: UniformItem
-        {
-		uniformModel="-";
-        uniformClass="103_Dress_Uniform_Bear_v";
-		containerClass="Supply200";
-		mass=10;
-		uniformType="Neopren";
-		modelSides[]={6};
-        };
-    };
-
-    class 103_Dress_Uniform: OPTRE_UNSC_Dress_Uniform_odst
-    {
-        displayName="[103rd] Dress Uniform";
-        author="103rd ODST AUX";
-        scope=2;
-        class ItemInfo: UniformItem
-        {
-		uniformModel="-";
-        uniformClass="103_Dress_Uniform_v";
-		containerClass="Supply200";
-		mass=10;
-		uniformType="Neopren";
-		modelSides[]={6};
-        };
-    };
 
     //103rd Base Classes
     #include<103rdBaseClasses.hpp>
@@ -158,56 +92,6 @@ class CfgVehicles
     class MA_Marine_ODST_BDU_HJ_NC;
     class FlagCarrier;
     class OPTRE_UNSC_Army_Soldier_DressODST;
-    class OPTRE_UNSC_Army_Soldier_DressWhite;
-
-    //Dress Vehicle
-    class 103_Dress_Uniform_Gigasus_v: OPTRE_UNSC_Army_Soldier_DressODST
-    {
-        scope = 2;
-        scopeArsenal=2;
-        author = "103rd ODST Aux";
-        displayName = "[103rd] Dress Uniform (Gigasus)";
-        model="\OPTRE_UNSC_Units\Army\officer.p3d";
-        picture="OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-        hiddenSelections[] = {"camo1","camo2","insignia","clan","ODST"};
-        hiddenSelectionsTextures[] ={"OPTRE_UNSC_Units\Army\data\dress_uniform_odst_co.paa","OD103\data\uniform\textures\Gigasus_Ranks_CO.paa"};
-    };
-
-    class 103_Dress_Uniform_Hellhawk_v: OPTRE_UNSC_Army_Soldier_DressODST
-    {
-        scope = 2;
-        scopeArsenal=2;
-        author = "103rd ODST Aux";
-        displayName = "[103rd] Dress Uniform (Hellhawk)";
-        model="\OPTRE_UNSC_Units\Army\officer.p3d";
-        picture="OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-        hiddenSelections[] = {"camo1","camo2","insignia","clan","ODST"};
-        hiddenSelectionsTextures[] ={"OPTRE_UNSC_Units\Army\data\dress_uniform_odst_co.paa","OD103\data\uniform\textures\Hellhawk_Ranks_CO.paa"};
-    };
-
-    class 103_Dress_Uniform_Bear_v: OPTRE_UNSC_Army_Soldier_DressODST
-    {
-        scope = 2;
-        scopeArsenal=2;
-        author = "103rd ODST Aux";
-        displayName = "[103rd] Dress Uniform (Bear)";
-        model="\OPTRE_UNSC_Units\Army\officer.p3d";
-        picture="OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-        hiddenSelections[] = {"camo1","camo2","insignia","clan","ODST"};
-        hiddenSelectionsTextures[] ={"OPTRE_UNSC_Units\Army\data\dress_uniform_white_co.paa","OD103\data\uniform\textures\Bear_Ranks_CO.paa"};
-    };
-
-    class 103_Dress_Uniform_v: OPTRE_UNSC_Army_Soldier_DressODST
-    {
-        scope = 2;
-        scopeArsenal=2;
-        author = "103rd ODST Aux";
-        displayName = "[103rd] Dress Uniform";
-        model="\OPTRE_UNSC_Units\Army\officer.p3d";
-        picture="OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-        hiddenSelections[] = {"camo1","camo2","insignia","clan","ODST"};
-        hiddenSelectionsTextures[] ={"OPTRE_UNSC_Units\Army\data\dress_uniform_odst_co.paa","OD103\data\uniform\textures\103rd_Ranks_CO.paa"};
-    };
 
     //103rd Base Classes - CfgVehicles class
     #include<103rdBaseClassesVehicles.hpp>

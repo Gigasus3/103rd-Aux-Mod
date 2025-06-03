@@ -316,6 +316,22 @@ class 103rd_Uniform_ODST_Base_Weapon: MA_Marine_BDU_ODST_HJ_NC
 		modelSides[]={6};
     };
 };
+class 103rd_Dress_Uniform_Base: OPTRE_UNSC_Dress_Uniform_odst
+{
+	scope=1;
+	scopeArsenal=1;
+    displayName="[103rd] Dress Uniform";
+    author="103rd ODST AUX";
+    class ItemInfo: UniformItem
+    {
+		uniformModel="-";
+        uniformClass="103rd_Dress_Uniform_Base_v";
+		containerClass="Supply200";
+		mass=10;
+		uniformType="Neopren";
+		modelSides[]={6};
+    };
+};
 
 // Base Weapons
 

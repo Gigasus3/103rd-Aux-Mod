@@ -4,7 +4,7 @@ class 103rd_ODST_Facewear: G_Combat
     scopeArsenal=2;
     ace_color[] = {0, 0, -1};  // Post-proccess color
     ace_tintAmount = COLOUR*2;  // Amount of tint applied to the color
-    ace_resistance = 2;  // Resistance to breaking (0 or 1 or 2)
+    ace_resistance = 1;  // Resistance to breaking (0 or 1 or 2)
     ace_protection = 1;  // Provides protection (0-no, 1-yes)
     ace_overlay = "OD103\data\textures\HUD\CombatGoggles.paa";  // (Optional) Default overlay image path ("" for none)
     ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";  // (Optional) Dirt overlay image path
@@ -51,7 +51,7 @@ class 103rd_ODST_Command: 103rd_ODST_Facewear
     scopeArsenal=2;
     ace_color[] = {0, 0, -1};  // Post-proccess color
     ace_tintAmount = COLOUR*2;  // Amount of tint applied to the color
-    ace_resistance = 2;  // Resistance to breaking (0 or 1 or 2)
+    ace_resistance = 1;  // Resistance to breaking (0 or 1 or 2)
     ace_protection = 1;  // Provides protection (0-no, 1-yes)
     ace_overlay = "OD103\data\textures\HUD\CombatGoggles.paa";  // (Optional) Default overlay image path ("" for none)
     ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";  // (Optional) Dirt overlay image path
@@ -98,7 +98,7 @@ class 103rd_ODST_Diving: 103rd_ODST_Facewear
     scopeArsenal=2;
     ace_color[] = {0, 0, -1};  // Post-proccess color
     ace_tintAmount = COLOUR*2;  // Amount of tint applied to the color
-    ace_resistance = 2;  // Resistance to breaking (0 or 1 or 2)
+    ace_resistance = 1;  // Resistance to breaking (0 or 1 or 2)
     ace_protection = 1;  // Provides protection (0-no, 1-yes)
     ace_overlay = "OD103\data\textures\HUD\DivingGoggles.paa";  // (Optional) Default overlay image path ("" for none)
     ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";  // (Optional) Dirt overlay image path

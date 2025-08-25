@@ -11,7 +11,7 @@ class XtdGearModels
             class 103rd_Custom_Vests
             {
                 label="103rd_Custom_Vests";
-                values[]={"Hellhawk", "Cooky", "Astro", "Rex","Gigasus"};
+                values[]={"Hellhawk", "Cooky", "Astro", "Rex","Gigasus","Gigasus Camo", "Cadian", "Killer", "Shawn"};
             };
         };
     class 103rd_Standard_Vests

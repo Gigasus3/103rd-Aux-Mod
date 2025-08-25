@@ -8,6 +8,7 @@ class CfgPatches
         units[]=
         {
             "Flag_103rd",
+            "Flag_103rdTorn",
             "103rd_STANDARD_Rucksack",
             "103rd_ENGINEER_Rucksack",
             "103rd_MEDIC_Rucksack",
@@ -30,6 +31,10 @@ class CfgPatches
             "103rd_M52_Astro_VEST",
             "103rd_M52_Rex_VEST",
             "103rd_M52_Gigasus_VEST",
+            "103rd_M52_Gigasus_Green_VEST",
+            "103rd_M52_Cadian_VEST",
+            "103rd_M52_Killer_VEST",
+            "103rd_M52_Shawn_VEST",
             "103rd_CH252D_Helmet_Standard",
             "103rd_CH252D_Helmet_MEDIC",
             "103rd_CH252D_Helmet_RTO",
@@ -41,6 +46,10 @@ class CfgPatches
             "103rd_Rex_Helmet",
             "103rd_Cooky_Helmet",
             "103rd_Gigasus_Helmet",
+            "103rd_Gigasus_Green_Helmet",
+            "103rd_Cadian_Helmet",
+            "103rd_Killer_Helmet",
+            "103rd_Shawn_Helmet",
             "103rd_M7S_Gigasus"
         };
         magazines[]={};
@@ -67,17 +76,22 @@ class CfgWeapons
     class ItemInfo;
     class UniformItem;
     class VestItem;
-	class MA_M7_SMG;
     class OPTRE_UNSC_Dress_Uniform_odst;
+	class MA_M7_SMG;
+    class MA_M90_SG;
+    class MA_MA5B;
+    class MA_MA2B_AR;
+    class MA_BR55_HB;
+    class MA_MK50_Sidekick;
 
     //103rd Base Classes
     #include<103rdBaseClasses.hpp>
 
     //103rd Standard ODST Armor Config
-    #include<103rdStndArmor.hpp>
+    #include<armor\103rdStndArmor.hpp>
 
     //103rd Custom Armor Config
-    #include<103rdCustomArmor.hpp>
+    #include<armor\103rdCustomArmor.hpp>
 
 	//103rd Standard Uniforms - CfgWeapons class
     #include<uniform\103rdUniformsWeapons.hpp>
@@ -121,6 +135,28 @@ class CfgVehicles
 		class EventHandlers
 		{
 			init = "(_this select 0) setFlagTexture '\OD103\data\Logo\103rdFlag.paa'";
+		};
+	};
+
+    class Flag_103rdTorn: FlagCarrier
+	{
+		author = "103rd ODST Aux";
+		class SimpleObject
+		{
+			eden = 0;
+			animate[] = {{"flag",0}};
+			hide[] = {};
+			verticalOffset = 3.977;
+			verticalOffsetWorld = 0;
+			init = "''";
+		};
+		_generalMacro = "Flag_ION_F";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[103rd] Flag Torn";
+		class EventHandlers
+		{
+			init = "(_this select 0) setFlagTexture '\OD103\data\Logo\103rdTornFlag.paa'";
 		};
 	};
 };

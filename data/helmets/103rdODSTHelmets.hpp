@@ -5,6 +5,9 @@ class 103rd_CH252D_Helmet_Standard: 103rd_CH252D_Helmet_Base
     displayName="[103rd] CH252D Standard Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelections[]=
     {
@@ -48,6 +51,9 @@ class 103rd_CH252D_Helmet_MEDIC: 103rd_CH252D_Helmet_Base
     displayName="[103rd] CH252D Medic Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelections[]=
     {
@@ -91,6 +97,9 @@ class 103rd_CH252D_Helmet_RTO: 103rd_CH252D_Helmet_Base
     displayName="[103rd] CH252D RTO Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelections[]=
     {
@@ -134,6 +143,9 @@ class 103rd_CH252D_Helmet_ENGINEER: 103rd_CH252D_Helmet_Base
 	displayName="[103rd] CH252D Engineer Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelections[]=
     {
@@ -171,12 +183,15 @@ class 103rd_CH252D_Helmet_ENGINEER: 103rd_CH252D_Helmet_Base
     };
 };
 class 103rd_CH252D_Helmet_MARKSMAN: 103rd_CH252D_Helmet_Base
-	{
-		scope=2;
-		scopeArsenal=2;
-		displayName="[103rd] CH252D Marksman Helmet";
+{
+	scope=2;
+	scopeArsenal=2;
+	displayName="[103rd] CH252D Marksman Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelections[]=
     {
@@ -214,39 +229,45 @@ class 103rd_CH252D_Helmet_MARKSMAN: 103rd_CH252D_Helmet_Base
     };
 };
 class 103rd_AA_Helm: MA_M56A_Helmet
+{
+	scope=2;
+	scopeArsenal=0;
+	displayName="[103rd] Air Assault Helmet";
+	model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="\MA_Armor\data\Icons\AA_Helmet.paa";
+	hiddenSelectionsTextures[]=
 	{
-		scope=2;
-		scopeArsenal=0;
-		displayName="[103rd] Air Assault Helmet";
-		model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-		picture="\MA_Armor\data\Icons\AA_Helmet.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"MA_Armor\data\Helmets\AA\AA_Helm_co.paa",
-			"MA_Armor\data\Helmets\AA\AA_Visor_Blue_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-		};
+		"MA_Armor\data\Helmets\AA\AA_Helm_co.paa",
+		"MA_Armor\data\Helmets\AA\AA_Visor_Blue_co.paa"
 	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+	};
+};
 
 class 103rd_Recon_Helm: MA_Recon_Helmet_Black
+{
+	scope=2;
+	scopeArsenal=0;
+	displayName="[103rd] Recon Helmet";
+	model="MA_Armor\data\Helmets\Recon\Recon_Helmet.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	hiddenSelectionsTextures[]=
 	{
-		scope=2;
-		scopeArsenal=0;
-		displayName="[103rd] Recon Helmet";
-		model="MA_Armor\data\Helmets\Recon\Recon_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"MA_Armor\data\Helmets\Recon\Helmets\Black_Recon_Helmet_CO.paa",
-            "MA_Armor\data\Helmets\Recon\Visors\Base_Recon_Visor_CO.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="MA_Armor\data\Helmets\Recon\Recon_Helmet.p3d";
-		};
+		"MA_Armor\data\Helmets\Recon\Helmets\Black_Recon_Helmet_CO.paa",
+           "MA_Armor\data\Helmets\Recon\Visors\Base_Recon_Visor_CO.paa"
 	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\Recon\Recon_Helmet.p3d";
+	};
+};
 class 103rd_CH252D_Helmet_Standard_dp: 103rd_CH252D_Helmet_Standard
 {
     scope=1;
@@ -254,6 +275,9 @@ class 103rd_CH252D_Helmet_Standard_dp: 103rd_CH252D_Helmet_Standard
     displayName="[103rd] CH252D Standard Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelectionsTextures[]=
     {
@@ -277,6 +301,9 @@ class 103rd_CH252D_Helmet_MEDIC_dp: 103rd_CH252D_Helmet_MEDIC
     displayName="[103rd] CH252D Medic Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
    hiddenSelectionsTextures[]=
     {
@@ -300,6 +327,9 @@ class 103rd_CH252D_Helmet_RTO_dp: 103rd_CH252D_Helmet_RTO
     displayName="[103rd] CH252D RTO Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelectionsTextures[]=
     {
@@ -323,6 +353,9 @@ class 103rd_CH252D_Helmet_ENGINEER_dp: 103rd_CH252D_Helmet_ENGINEER
 	displayName="[103rd] CH252D Engineer Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp_dp.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelectionsTextures[]=
     {
@@ -346,6 +379,9 @@ class 103rd_CH252D_Helmet_MARKSMAN_dp: 103rd_CH252D_Helmet_MARKSMAN
 	displayName="[103rd] CH252D Marksman Helmet";
     author="103rd";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+    tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     picture=""; 
     hiddenSelectionsTextures[]=
     {

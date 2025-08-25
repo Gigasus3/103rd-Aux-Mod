@@ -4,6 +4,10 @@ class 103rd_Hellhawk_Helmet: 103rd_CH252D_Helmet_Base
     scopeArsenal=2;
     displayName="[103rd] Hellhawk Helmet";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
     hiddenSelections[]=
     {
         "Camo1",
@@ -32,6 +36,10 @@ class 103rd_Astro_Helmet: 103rd_CH252D_Helmet_Base
     scopeArsenal=2;
     displayName="[103rd] Astro Helmet";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
     hiddenSelections[]=
     {
         "Camo1",
@@ -60,6 +68,9 @@ class 103rd_Astro_Recon_Helmet: 103rd_Recon_Helm
     scopeArsenal=2;
     displayName="[103rd] Astro Recon Helmet";
     model="MA_Armor\data\Helmets\Recon\Recon_Helmet.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
     hiddenSelectionsTextures[]=
     {
         "OD103\data\helmets\customs\helm_recon_astro_co.paa",
@@ -82,6 +93,9 @@ class 103rd_Rex_Helmet: 103rd_CH252D_Helmet_Base
 	scopeArsenal=2;
 	displayName="[103rd] Rex Helmet";
 	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
 	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
 	hiddenSelectionsTextures[]=
 	{
@@ -105,6 +119,10 @@ class 103rd_Cooky_Helmet: 103rd_AA_Helm
 	scopeArsenal=2;
 	displayName="[103rd] Cooky Helmet";
 	model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="\MA_Armor\data\Icons\AA_Helmet.paa";
 	hiddenSelectionsTextures[]=
 	{
 		"OD103\data\helmets\customs\helm_cooky_co.paa",
@@ -127,6 +145,10 @@ class 103rd_Gigasus_Helmet: 103rd_CH252D_Helmet_Base
     scopeArsenal=2;
     displayName="[103rd] Gigasus Helmet";
     model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
     hiddenSelections[]=
     {
         "Camo1",
@@ -149,12 +171,47 @@ class 103rd_Gigasus_Helmet: 103rd_CH252D_Helmet_Base
     };
 };
 
+class 103rd_Gigasus_Green_Helmet: 103rd_CH252D_Helmet_Base
+{
+    scope=2;
+    scopeArsenal=2;
+    displayName="[103rd] Gigasus Camo Helmet";
+    model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "OD103\data\helmets\customs\Gigasus_GODST_Helmet_CO.paa",
+		"OD103\data\helmets\customs\visor\Gigasus_GODST_Visor_CO.paa"
+    };
+    
+    class XtdGearInfo
+	{
+		model="103rd_Custom_Helmets";
+		103rd_Custom_Helmets="Gigasus Camo";
+	};
+    class ItemInfo: ItemInfo
+    {
+        uniformModel="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+    };
+};
+
 class 103rd_Thunder_Helmet: 103rd_CH252D_Helmet_Base
 {
 	scope=2;
 	scopeArsenal=2;
 	displayName="[103rd] Thunder Helmet";
 	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
 	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
 	hiddenSelectionsTextures[]=
 	{
@@ -177,6 +234,9 @@ class 103rd_Thunder_Helmet_dp: 103rd_Thunder_Helmet
 	scopeArsenal=1;
 	displayName="[103rd] Thunder Helmet";
 	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
 	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
 	hiddenSelectionsTextures[]=
 	{
@@ -199,6 +259,9 @@ class 103rd_Raama_Helmet: 103rd_CH252D_Helmet_Base
 	scopeArsenal=2;
 	displayName="[103rd] Raama Helmet";
 	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
 	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
 	hiddenSelectionsTextures[]=
 	{
@@ -221,6 +284,9 @@ class 103rd_Raama_Helmet_dp: 103rd_Raama_Helmet
 	scopeArsenal=1;
 	displayName="[103rd] Raama Helmet";
 	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
 	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
 	hiddenSelectionsTextures[]=
 	{
@@ -235,5 +301,130 @@ class 103rd_Raama_Helmet_dp: 103rd_Raama_Helmet
             "OD103\data\helmets\customs\helm_Raama_co.paa",
             "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"    
         };
+	};
+};
+class 103rd_Cadian_Helmet: 103rd_CH252D_Helmet_Base
+{
+	scope=2;
+	scopeArsenal=2;
+	displayName="[103rd] Cadian Helmet";
+	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	hiddenSelectionsTextures[]=
+	{
+		"OD103\data\helmets\customs\Cadian_ODST_Helmet_CO.paa",
+		"MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Visor_CO.paa"
+	};
+	class XtdGearInfo
+	{
+	model="103rd_Custom_Helmets";
+	103rd_Custom_Helmets="Cadian";
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	};
+};
+class 103rd_Killer_Helmet: 103rd_CH252D_Helmet_Base
+{
+	scope=2;
+	scopeArsenal=2;
+	displayName="[103rd] Killer Helmet";
+	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	hiddenSelectionsTextures[]=
+	{
+		"OD103\data\helmets\customs\Killer_ODST_Helmet_CO.paa",
+		"MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Visor_CO.paa"
+	};
+	class XtdGearInfo
+	{
+	model="103rd_Custom_Helmets";
+	103rd_Custom_Helmets="Killer";
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	};
+};
+class 103rd_Cadian_Helmet_dp: 103rd_Cadian_Helmet
+{
+	scope=1;
+	scopeArsenal=1;
+	displayName="[103rd] Cadian Helmet";
+	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+	hiddenSelectionsTextures[]=
+	{
+		"OD103\data\helmets\customs\Cadian_ODST_Helmet_CO.paa",
+		"MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+        hiddenSelectionsTextures[]=
+        {
+            "OD103\data\helmets\customs\Cadian_ODST_Helmet_CO.paa",
+            "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"    
+        };
+	};
+};
+class 103rd_Killer_Helmet_dp: 103rd_Killer_Helmet
+{
+	scope=1;
+	scopeArsenal=1;
+	displayName="[103rd] Killer Helmet";
+	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+	hiddenSelectionsTextures[]=
+	{
+		"OD103\data\helmets\customs\Killer_ODST_Helmet_CO.paa",
+		"MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+        hiddenSelectionsTextures[]=
+        {
+            "OD103\data\helmets\customs\Killer_ODST_Helmet_CO.paa",
+            "MA_Armor\data\Helmets\Human_ODST\Color_Variants\MA_ODST_Depolarized_Visor_CA.paa"    
+        };
+	};
+};
+class 103rd_Shawn_Helmet: 103rd_CH252D_Helmet_Base
+{
+	scope=0;
+	scopeArsenal=0;
+	displayName="[103rd] Shawn Helmet";
+	model="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	tcp_visrRscTitlesClass="RscTCPVisrODST";
+    tcp_visrActivatedClass="TCP_H_Helmet_ECH252D";
+    tcp_visrDeactivatedClass="TCP_H_Helmet_ECH252D_Transparent";
+	picture="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
+	hiddenSelectionsTextures[]=
+	{
+		"OD103\data\helmets\customs\Gigasus_ODST_Helmet_CO.paa",
+		"OD103\data\helmets\customs\visor\Gigasus_ODST_Visor_CO.paa"
+	};
+	class XtdGearInfo
+	{
+	model="103rd_Custom_Helmets";
+	103rd_Custom_Helmets="Shawn";
+	};
+	class ItemInfo: ItemInfo
+	{
+		uniformModel="MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
 	};
 };

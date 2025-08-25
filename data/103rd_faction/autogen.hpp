@@ -77,6 +77,18 @@ class CfgGroups {
                         side = 1;
                         vehicle = "103rd_Raama";
                     };
+                    class Unit7 {
+                        position[] = {20, -20, 0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "103rd_Cadian";
+                    };
+                    class Unit8 {
+                        position[] = {-20, -20, 0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "103rd_Killer";
+                    };
                 };
 
                 class 103rd_mainforce {
@@ -464,6 +476,86 @@ class CfgVehicles {
         backpack = "103rd_ENGINEERLR_Rucksack";
 
         ALiVE_orbatCreator_loadout[] = {{"MEU_Railgun","","","",{"MEU_3Rnd_Railgun_Slug",3},{},""},{},{"MEU_m7_Folded","OPTRE_SRS99D_Suppressor","","OPTRE_M7_Sight",{"OPTRE_60Rnd_5x23mm_Mag_JHP",60},{},""},{"103rd_Uniform_ODST_Weapon",{{"ACE_Fortify",1},{"ACE_Flashlight_XL50",1},{"ACE_Clacker",1},{"MineDetector",1},{"ToolKit",1},{"ACE_wirecutter",1},{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",1},{"MEU_Medigel_Light",6},{"MEU_3Rnd_Railgun_Slug",2,3}}},{"103rd_M52_STND_VEST_ENGINEER",{{"ACE_tourniquet",3},{"ACE_morphine",3},{"ACE_epinephrine",3},{"MEU_Biofoam_Light",30},{"ACE_adenosine",1},{"MEU_Medigel_Light",2},{"MEU_3Rnd_Railgun_Slug",7,3}}},{"103rd_ENGINEERLR_Rucksack",{{"ACE_DefusalKit",1},{"MEU_Medigel_Light",3},{"OPTRE_60Rnd_5x23mm_Mag_JHP",18,60},{"DemoCharge_Remote_Mag",14,1},{"MEU_3Rnd_Railgun_Slug",3,3}}},"103rd_Raama_Helmet","MATGE_Balaclava_GRFS_Green",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","","TFAR_anprc152","ItemCompass","ACE_Altimeter","OPTRE_NVG_UAB_UL_CNM"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class 103rd_Cadian : 103rd_Astro {
+        author = "LT. Gigasus";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[103rd] Cadian";
+        side = 1;
+        faction = "103rd_odst";
+
+        identityTypes[] = {"Kerry","LanguageGRE_F","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
+
+        uniformClass = "103rd_Uniform_ODST_Weapon";
+
+        linkedItems[] = {"103rd_M52_Cadian_VEST","103rd_Cadian_Helmet","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"103rd_M52_Cadian_VEST","103rd_Cadian_Helmet","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"19_UNSC_M392","OPTRE_M6C","OPTRE_Smartfinder"};
+        respawnWeapons[] = {"19_UNSC_M392","OPTRE_M6C","OPTRE_Smartfinder"};
+
+        magazines[] = {"15Rnd_762x51_M392","OPTRE_12Rnd_127x40_Mag","Laserbatteries","15Rnd_762x51_M392","OPTRE_12Rnd_127x40_Mag","Laserbatteries"};
+        respawnMagazines[] = {"15Rnd_762x51_M392","OPTRE_12Rnd_127x40_Mag","Laserbatteries","15Rnd_762x51_M392","OPTRE_12Rnd_127x40_Mag","Laserbatteries"};
+
+        backpack = "103rd_RTO_Rucksack";
+
+        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_M392","","19_UNSC_BR55_LAM","19_UNSC_evosd",{"15Rnd_762x51_M392",15},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","OPTRE_M6C_Scope",{"OPTRE_12Rnd_127x40_Mag",12},{},""},{"103rd_Uniform_ODST_Weapon",{{"MEU_Biofoam_Light",30},{"MEU_Medigel_Light",30},{"ACE_tourniquet",3},{"ACE_morphine",3},{"ACE_epinephrine",3},{"ACE_plasmaIV_250",2},{"OPTRE_NVGT_C",1},{"OPTRE_16Rnd_127x40_Mag_Tracer",4,16}}},{"103rd_M52_Cadian_VEST",{{"15Rnd_762x51_M392_HVAP_tracer",20,15}}},{"103rd_RTO_Rucksack",{{"tsp_lockpick",1},{"ACE_IR_Strobe_Item",1},{"ItemcTabHCam",1},{"ACE_wirecutter",1},{"ACE_MapTools",1},{"ACE_Flashlight_XL50",1},{"ACE_EntrenchingTool",1},{"ACE_HuntIR_monitor",1},{"MA_M8_Smoke_Blue",5,1},{"MA_M8_Smoke_Green",5,1},{"MA_M8_Smoke_Orange",5,1},{"MA_M8_Smoke_Purple",5,1},{"MA_M8_Smoke_Red",5,1},{"MA_M8_Smoke_Yellow",5,1},{"MA_M8_Smoke_White",2,1}}},"103rd_Cadian_Helmet","103rd_ODST_Command",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class 103rd_Killer : 103rd_Astro {
+        author = "LT. Gigasus";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[103rd] Killer";
+        side = 1;
+        faction = "103rd_odst";
+
+        identityTypes[] = {"Kerry","LanguageGRE_F","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
+
+        uniformClass = "103rd_Uniform_ODST_Weapon";
+
+        linkedItems[] = {"103rd_M52_Killer_VEST","103rd_Killer_Helmet","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"103rd_M52_Killer_VEST","103rd_Killer_Helmet","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"19_UNSC_M392","OPTRE_M6C","OPTRE_Smartfinder"};
+        respawnWeapons[] = {"19_UNSC_M392","OPTRE_M6C","OPTRE_Smartfinder"};
+
+        magazines[] = {"15Rnd_762x51_M392","OPTRE_12Rnd_127x40_Mag","Laserbatteries","15Rnd_762x51_M392","OPTRE_12Rnd_127x40_Mag","Laserbatteries"};
+        respawnMagazines[] = {"15Rnd_762x51_M392","OPTRE_12Rnd_127x40_Mag","Laserbatteries","15Rnd_762x51_M392","OPTRE_12Rnd_127x40_Mag","Laserbatteries"};
+
+        backpack = "103rd_RTO_Rucksack";
+
+        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_M392","","19_UNSC_BR55_LAM","19_UNSC_evosd",{"15Rnd_762x51_M392",15},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","OPTRE_M6C_Scope",{"OPTRE_12Rnd_127x40_Mag",12},{},""},{"103rd_Uniform_ODST_Weapon",{{"MEU_Biofoam_Light",30},{"MEU_Medigel_Light",30},{"ACE_tourniquet",3},{"ACE_morphine",3},{"ACE_epinephrine",3},{"ACE_plasmaIV_250",2},{"OPTRE_NVGT_C",1},{"OPTRE_16Rnd_127x40_Mag_Tracer",4,16}}},{"103rd_M52_Killer_VEST",{{"15Rnd_762x51_M392_HVAP_tracer",20,15}}},{"103rd_RTO_Rucksack",{{"tsp_lockpick",1},{"ACE_IR_Strobe_Item",1},{"ItemcTabHCam",1},{"ACE_wirecutter",1},{"ACE_MapTools",1},{"ACE_Flashlight_XL50",1},{"ACE_EntrenchingTool",1},{"ACE_HuntIR_monitor",1},{"MA_M8_Smoke_Blue",5,1},{"MA_M8_Smoke_Green",5,1},{"MA_M8_Smoke_Orange",5,1},{"MA_M8_Smoke_Purple",5,1},{"MA_M8_Smoke_Red",5,1},{"MA_M8_Smoke_Yellow",5,1},{"MA_M8_Smoke_White",2,1}}},"103rd_Killer_Helmet","103rd_ODST_Command",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
